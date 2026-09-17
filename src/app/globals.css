@@ -88,9 +88,9 @@ h2 { font-size: clamp(36px, 4vw, 57px); line-height: 1.12; font-weight: 450; let
 .section-heading > p { max-width: 330px; font-size: 14px; line-height: 1.8; color: var(--muted); margin: 0 0 3px; }
 .services-section { background: #262722; }
 .services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #4b4c42; }
-.service { padding: 32px 32px 0; border-right: 1px solid #4b4c42; }
-.service:first-child { padding-left: 0; }
-.service:last-child { padding-right: 0; border: 0; }
+.service { padding: 48px; border-right: 1px solid #4b4c42; }
+.service:first-child { padding-left: 2vw; }
+.service:last-child { padding-right: 2vw; border: 0; }
 .service-top { display: flex; justify-content: space-between; align-items: center; color: var(--accent); margin-bottom: 34px; }
 .service-top .mono { font-size: 11px; color: var(--muted); }
 .service h3 { font-size: 25px; letter-spacing: -.035em; line-height: 1.22; font-weight: 450; max-width: 270px; margin: 0 0 20px; }
