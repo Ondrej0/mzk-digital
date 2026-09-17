@@ -300,9 +300,9 @@ export default function WorkPage() {
 
                         <div>
                             <p>
-                                Whether it's a new website, improving something that already
+                                Whether it&apos;s a new website, improving something that already
                                 exists, or software for a specific business problem, tell me
-                                what you're thinking.
+                                what you&apos;re thinking.
                             </p>
 
                             <ButtonLink href="/contact">

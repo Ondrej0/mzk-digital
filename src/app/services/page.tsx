@@ -205,8 +205,8 @@ export default function ServicesPage() {
 
                         <div>
                             <p>
-                                You don't need to arrive with a technical specification.
-                                Tell me what's not working, what you're trying to improve,
+                                You don&apos;t need to arrive with a technical specification.
+                                Tell me what&apos;s not working, what you&apos;re trying to improve,
                                 or what you want to build.
                             </p>
 

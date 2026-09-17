@@ -1,8 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export function ScrollReveal() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (reducedMotion.matches) return;
@@ -27,7 +30,7 @@ export function ScrollReveal() {
       observer.disconnect();
       document.documentElement.classList.remove("reveal-ready");
     };
-  }, []);
+  }, [pathname]);
 
   return null;
 }
