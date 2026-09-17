@@ -12,7 +12,7 @@ export function Services() {
   return (
     <section className="section services-section" id="services" aria-labelledby="services-heading">
       <div className="container">
-        <div className="section-heading" data-reveal><div><p className="eyebrow">01 / WHAT I DO</p><h2 id="services-heading">Your next step.<br /><span className="muted">Built around you.</span></h2></div><p>A new website, a clearer route to your customers, or a tool you wish existed. Let’s make it happen.</p></div>
+        <div className="section-heading" data-reveal><div><h2 className="eyebrow">01 / SERVICES</h2><p id="services-heading">Services I provide.<br /><span className="muted">Built around you.</span></p></div><p>A new website, a clearer route to your customers, or a tool you wish existed. Let’s make it happen.</p></div>
         <div className="services-grid">{services.map((service, index) => <article className={`service reveal-delay-${index + 1}`} data-reveal key={service.number}>
           <div className="service-top"><ServiceIcon symbol={service.symbol} /><span className="mono">/{service.number}</span></div>
           <h3>{service.title}</h3><p>{service.description}</p>

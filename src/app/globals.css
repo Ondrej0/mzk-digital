@@ -145,7 +145,7 @@ h2 { font-size: clamp(36px, 4vw, 57px); line-height: 1.12; font-weight: 450; let
 .contact-heading-row { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
 .contact-heading-row h2 { font-size: clamp(52px, 6.8vw, 96px); letter-spacing: -.065em; line-height: 1.03; }
 .contact-heading-row h2 > span { color: #5e7135; }
-.contact-arrow { font-size: 130px; line-height: 1; font-weight: 250; }
+.contact-arrow { font-size: 130px; line-height: 1; font-weight: 250; cursor: pointer; }
 .contact-bottom { display: flex; align-items: center; justify-content: space-between; gap: 35px; margin-top: 35px; }
 .contact-bottom > p { max-width: 405px; font-size: 14px; line-height: 1.8; }
 .button-dark { background: #272d1d; color: #f1f3e9; }
@@ -215,6 +215,9 @@ h2 { font-size: clamp(36px, 4vw, 57px); line-height: 1.12; font-weight: 450; let
   .service:hover li:nth-child(3) { transform: translateX(6px); }
   .reveal-ready .project.is-revealed, .project { transition: transform .36s cubic-bezier(.2,.8,.2,1); }
   .reveal-ready .project.is-revealed:hover, .project:hover { transform: translateY(-6px); }
+  .project {
+    cursor: pointer;
+  }
   .project-cover { box-shadow: 0 1px 0 #0000000b; transition: box-shadow .34s ease, filter .34s ease; }
   .project-cover::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg, transparent 25%, #ffffff18 50%, transparent 75%); transform: translateX(-130%); transition: transform .65s cubic-bezier(.2,.8,.2,1); }
   .project-cover img { transition: transform .65s cubic-bezier(.2,.8,.2,1); }
@@ -242,9 +245,9 @@ h2 { font-size: clamp(36px, 4vw, 57px); line-height: 1.12; font-weight: 450; let
   .process-grid li:hover .process-number { border-color: var(--accent); }
   .process-grid li:hover .process-number > span:last-child { transform: translateX(5px); }
   .contact-arrow { transition: transform .45s cubic-bezier(.2,.8,.2,1), color .24s ease; }
-  .contact-section:hover .contact-arrow { color: #536631; transform: translate(8px, -8px) rotate(-4deg); }
+  .contact-arrow:hover { color: #536631; transform: translate(8px, -8px) rotate(-4deg); }
   .contact-pending { transition: border-color .22s ease, transform .25s cubic-bezier(.2,.8,.2,1); }
-  .contact-section:hover .contact-pending { border-color: #667941; transform: translateX(5px); }
+  .contact-pending:hover { border-color: #667941; transform: translateX(5px); }
   .footer-top nav a, .footer-contact > a { transition: color .2s ease, transform .22s cubic-bezier(.2,.8,.2,1); }
   .footer-top nav a:hover, .footer-contact > a:hover { transform: translateX(3px); }
   .footer-bottom a { transition: color .2s ease; }

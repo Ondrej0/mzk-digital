@@ -5,7 +5,7 @@ export function About() {
   return (
     <section className="section about-section" id="about" aria-labelledby="about-heading">
       <div className="container about-grid">
-        <div data-reveal><p className="eyebrow">03 / A PERSONAL APPROACH</p><h2 id="about-heading">One person.<br />A shared ambition.</h2><p className="about-intro">You know your business.<br />I’ll help bring the digital side to life.</p><Link href="/contact" className="text-link">Work with me <Arrow diagonal /></Link></div>
+        <div data-reveal><h2 className="eyebrow">03 / ABOUT MY APPROACH</h2><p id="about-heading">One person.<br />A shared ambition.</p><p className="about-intro">You know your business.<br />I’ll help bring the digital side to life.</p><Link href="/contact" className="text-link">Work with me <Arrow diagonal /></Link></div>
         <div className="principles">
           <article data-reveal><span className="mono">01</span><div><h3>Direct from the start</h3><p>You work with the person designing and building your project. Clear conversations, honest answers and a shared understanding of what comes next.</p></div></article>
           <article className="reveal-delay-1" data-reveal><span className="mono">02</span><div><h3>The details make the difference</h3><p>How a page feels on a phone. How quickly it loads. Whether everyone can use it. I treat these as part of the work, from the beginning.</p></div></article>
