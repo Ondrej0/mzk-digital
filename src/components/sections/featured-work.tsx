@@ -7,8 +7,8 @@ export function FeaturedWork() {
   return (
     <section className="section work-section" id="work" aria-labelledby="work-heading">
       <div className="container">
-        <div className="section-heading"><div><p className="eyebrow">02 / SELECTED WORK</p><h2 id="work-heading">Ideas, made real.</h2></div><p>A look at what I’m building.<br />Full case studies are on their way.</p></div>
-        <div className="projects-grid">{featuredProjects.map((project, index) => <article className="project" key={project.slug}>
+        <div className="section-heading" data-reveal><div><p className="eyebrow">02 / SELECTED WORK</p><h2 id="work-heading">Ideas, made real.</h2></div><p>A look at what I’m building.<br />Full case studies are on their way.</p></div>
+        <div className="projects-grid">{featuredProjects.map((project, index) => <article className={`project reveal-delay-${index + 1}`} data-reveal key={project.slug}>
           <div className={`project-cover project-cover-${project.cover}`}>
             {project.image ? <Image src={project.image.src} alt={project.image.alt} fill sizes="(max-width: 767px) 90vw, 45vw" /> : <>
               <div className="cover-top mono"><span>PROJECT {String(index + 1).padStart(2, "0")}</span><span>WEB EXPERIENCE</span></div>
