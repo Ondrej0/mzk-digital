@@ -84,7 +84,7 @@ section[id] { scroll-margin-top: 20px; }
 .section { padding-block: 108px; }
 .section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 48px; margin-bottom: 53px; }
 .section-heading .eyebrow, .about-grid > div > .eyebrow { margin-bottom: 21px; color: var(--muted); }
-h2 { font-size: clamp(36px, 4vw, 57px); line-height: 1.12; font-weight: 450; letter-spacing: -.05em; margin: 0; }
+h2, .section-heading > div > p, .about-grid > div:first-child > p#about-heading { font-size: clamp(36px, 4vw, 57px); line-height: 1.12; font-weight: 450; letter-spacing: -.05em; margin: 0; }
 .section-heading > p { max-width: 330px; font-size: 14px; line-height: 1.8; color: var(--muted); margin: 0 0 3px; }
 .services-section { background: #262722; }
 .services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #4b4c42; }
@@ -317,7 +317,7 @@ h2 { font-size: clamp(36px, 4vw, 57px); line-height: 1.12; font-weight: 450; let
   .section { padding-block: 64px; }
   .section-heading { flex-direction: column; align-items: flex-start; gap: 22px; margin-bottom: 35px; }
   .section-heading .eyebrow, .about-grid > div > .eyebrow { margin-bottom: 17px; }
-  h2 { font-size: clamp(36px, 7vw, 46px); }
+  h2, .section-heading > div > p, .about-grid > div:first-child > p#about-heading { font-size: clamp(36px, 7vw, 46px); }
   .section-heading > p { max-width: 440px; font-size: 13px; }
   .services-grid { grid-template-columns: 1fr; }
   .service, .service:first-child, .service:last-child { border-right: 0; border-bottom: 1px solid #4b4c42; padding: 26px 0 28px; }
