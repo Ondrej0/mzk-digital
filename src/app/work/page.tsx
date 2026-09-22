@@ -76,6 +76,7 @@ export default function WorkPage() {
                 {featuredProjects.map((project, index) => (
                     <article
                         className="work-page-project"
+                        id={project.slug}
                         key={project.slug}
                         aria-labelledby={`project-${project.slug}`}
                     >

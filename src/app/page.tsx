@@ -10,5 +10,5 @@ import { site } from "@/data/site";
 export const metadata: Metadata = { alternates: site.url ? { canonical: site.url.href } : undefined };
 
 export default function Home() {
-  return <><Hero /><Services /><FeaturedWork /><About /><Process /><Contact /></>;
+  return <><Hero /><Services /><FeaturedWork /><Process /><Contact /></>;
 }

@@ -8,7 +8,7 @@ const steps = [
 export function Process() {
   return (
     <section className="section process-section" aria-labelledby="process-heading">
-      <div className="container"><div className="section-heading" data-reveal><div><h2 className="eyebrow">04 / HOW WE GET THERE</h2><p id="process-heading">Clear steps.<br /><span className="muted">No mystery.</span></p></div><p>Good work comes from a good working relationship. Here’s how ours takes shape.</p></div>
+      <div className="container"><div className="section-heading" data-reveal><div><h2 className="eyebrow">03 / HOW WE GET THERE</h2><p id="process-heading">Clear steps.<br /><span className="muted">No mystery.</span></p></div></div>
         <ol className="process-grid">{steps.map((step, index) => <li className={`reveal-delay-${index + 1}`} data-reveal key={step.title}><div className="process-number mono"><span>0{index + 1}</span><span aria-hidden="true">{index === steps.length - 1 ? "↗" : "→"}</span></div><h3>{step.title}</h3><p>{step.description}</p></li>)}</ol>
       </div>
     </section>

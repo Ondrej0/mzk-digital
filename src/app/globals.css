@@ -117,6 +117,8 @@ h2, .section-heading > div > p, .about-grid > div:first-child > p#about-heading 
 .breas-wordmark strong { font-size: clamp(36px, 4.9vw, 70px); font-weight: 500; letter-spacing: -.065em; line-height: 1.05; display: flex; align-items: center; gap: 16px; }
 .breas-asterisk { color: #e0edb0; font-size: 1em; }
 .project-meta { padding-top: 22px; }
+.project-card-link { display: block; color: inherit; text-decoration: none; border-radius: 3px; }
+.project-card-link:focus-visible { outline-offset: 8px; }
 .project-meta .eyebrow { font-size: 9px; margin-bottom: 7px; }
 .project-meta h3 { font-weight: 500; font-size: 26px; letter-spacing: -.035em; margin-bottom: 12px; }
 .project-meta > p:not(.eyebrow) { max-width: 480px; font-size: 13px; line-height: 1.8; color: #636758; }
@@ -213,25 +215,16 @@ h2, .section-heading > div > p, .about-grid > div:first-child > p#about-heading 
   .service:hover li:nth-child(1) { transform: translateX(2px); }
   .service:hover li:nth-child(2) { transform: translateX(4px); }
   .service:hover li:nth-child(3) { transform: translateX(6px); }
-  .reveal-ready .project.is-revealed, .project { transition: transform .36s cubic-bezier(.2,.8,.2,1); }
-  .reveal-ready .project.is-revealed:hover, .project:hover { transform: translateY(-6px); }
-  .project {
-    cursor: pointer;
-  }
   .project-cover { box-shadow: 0 1px 0 #0000000b; transition: box-shadow .34s ease, filter .34s ease; }
   .project-cover::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg, transparent 25%, #ffffff18 50%, transparent 75%); transform: translateX(-130%); transition: transform .65s cubic-bezier(.2,.8,.2,1); }
   .project-cover img { transition: transform .65s cubic-bezier(.2,.8,.2,1); }
   .cover-bottom > span:last-child, .north-wordmark, .breas-wordmark { transition: transform .38s cubic-bezier(.2,.8,.2,1); }
-  .project:hover .project-cover { box-shadow: 0 16px 28px #25272024; }
-  .project:hover .project-cover::after { transform: translateX(130%); }
-  .project:hover .project-cover img { transform: scale(1.045); }
-  .project:hover .north-wordmark, .project:hover .breas-wordmark { transform: scale(1.035); }
-  .project:hover .cover-bottom > span:last-child { transform: translate(4px, -4px); }
-  .project-meta h3 { transition: color .2s ease; }
-  .project:hover .project-meta h3 { color: #596733; }
-  .project-tags li { transition: background .2s ease, border-color .2s ease, transform .2s ease; }
-  .project:hover .project-tags li { background: #dee2d0; border-color: #aeb49f; }
-  .project:hover .project-tags li:nth-child(odd) { transform: translateY(-2px); }
+  .project .project-cover:hover { box-shadow: 0 16px 28px #25272024; }
+  .project .project-cover:hover::after { transform: translateX(130%); }
+  .project .project-cover:hover img { transform: scale(1.045); }
+  .project .project-cover:hover .north-wordmark, .project .project-cover:hover .breas-wordmark { transform: scale(1.035); }
+  .project .project-cover:hover .cover-bottom > span:last-child { transform: translate(4px, -4px); }
+  .project-meta .text-link:hover { color: #596733; border-color: #596733; }
   .principles article { transition: border-color .25s ease, padding-left .3s cubic-bezier(.2,.8,.2,1); }
   .principles article > span { transition: color .2s ease, transform .25s cubic-bezier(.2,.8,.2,1); }
   .principles article:hover { border-color: #6a6e5d; padding-left: 10px; }

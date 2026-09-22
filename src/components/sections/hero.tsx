@@ -22,7 +22,6 @@ export function Hero() {
             <Image src={portrait} alt="Ondrej, the independent developer behind MZK Digital" fill sizes="(max-width: 600px) 85vw, (max-width: 900px) 50vw, 390px" preload placeholder="blur" className="portrait-image" />
             <span className="portrait-corner" aria-hidden="true">↗</span>
           </div>
-          <figcaption><div><span className="portrait-name">Hi, I’m Ondrej<span>.</span></span><span className="portrait-role">Your developer, from first idea to launch.</span></div><span className="portrait-signature" aria-hidden="true">o.</span></figcaption>
         </figure>
       </div>
       <div className="hero-footnote"><span>DESIGNED WITH PURPOSE. BUILT WITH CARE.</span><a href="#services">A little further down <span aria-hidden="true">↓</span></a></div>

@@ -7,8 +7,9 @@ export function FeaturedWork() {
   return (
     <section className="section work-section" id="work" aria-labelledby="work-heading">
       <div className="container">
-        <div className="section-heading" data-reveal><div><h2 className="eyebrow">02 / SELECTED WORK EXAMPLES</h2><p id="work-heading">Ideas, made real.</p></div><p>A look at what I’m building.<br />Full case studies are on their way.</p></div>
+        <div className="section-heading" data-reveal><div><h2 className="eyebrow">02 / SELECTED WORK EXAMPLES</h2><p id="work-heading">Ideas, made real.</p></div></div>
         <div className="projects-grid">{featuredProjects.map((project, index) => <article className={`project reveal-delay-${index + 1}`} data-reveal key={project.slug}>
+          <Link className="project-card-link" href={`/work#${project.slug}`} aria-label={`Explore ${project.name}`}>
           <div className={`project-cover project-cover-${project.cover}`}>
             {project.image ? <Image src={project.image.src} alt={project.image.alt} fill sizes="(max-width: 767px) 90vw, 45vw" /> : <>
               <div className="cover-top mono"><span>PROJECT {String(index + 1).padStart(2, "0")}</span><span>WEB EXPERIENCE</span></div>
@@ -16,8 +17,9 @@ export function FeaturedWork() {
               <div className="cover-bottom mono"><span>PROJECT COVER</span><span aria-hidden="true">↗</span></div>
             </>}
           </div>
+          </Link>
           <div className="project-meta"><p className="eyebrow">{project.category}</p><h3>{project.name}</h3><p>{project.description}</p><ul className="project-tags" aria-label={`${project.name} technologies and focus`}>{project.technologies.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-            {project.href ? <Link className="text-link" href={project.href}>Explore {project.name} <Arrow diagonal /></Link> : <span className="project-status"><span aria-hidden="true">↳</span> Case study in preparation</span>}
+            <Link className="text-link" href={`/work#${project.slug}`}>Explore {project.name} <Arrow diagonal /></Link>
           </div>
         </article>)}</div>
       </div>
