@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { featuredProjects } from "@/data/projects";
 import { Arrow } from "@/components/ui/arrow";
@@ -185,23 +184,19 @@ export default function WorkPage() {
                                         ))}
                                     </ul>
                                 </div>
-
-                                <div className="work-page-project-action">
-                                    {project.href ? (
-                                        <Link
-                                            className="text-link"
-                                            href={project.href}
+                                {project.websiteUrl && (
+                                    <div className="work-page-project-action">
+                                        <a
+                                            className="button button-dark"
+                                            href={project.websiteUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label={`Visit ${project.name} website (opens in a new tab)`}
                                         >
-                                            Explore {project.name}
-                                            <Arrow diagonal />
-                                        </Link>
-                                    ) : (
-                                        <span className="project-status">
-                      <span aria-hidden="true">↳</span>
-                      Full case study in preparation
-                    </span>
-                                    )}
-                                </div>
+                                            Visit website <Arrow diagonal />
+                                        </a>
+                                    </div>
+                                )}
                             </div>
                         </div>
                         <div className="container work-page-project-story-grid">
@@ -316,12 +311,6 @@ export default function WorkPage() {
                         </h2>
 
                         <div>
-                            <p>
-                                Whether it&apos;s a new website, improving something that already
-                                exists, or software for a specific business problem, tell me
-                                what you&apos;re thinking.
-                            </p>
-
                             <ButtonLink href="/contact">
                                 Tell me about your project
                             </ButtonLink>

@@ -10,7 +10,7 @@ export type Project = {
   highlights: readonly string[];
   stack: readonly string[];
   cover: "north" | "breas";
-  // Add verified screenshots and a case-study URL when the full content is ready.
+  websiteUrl?: string;
   image?: { src: string; alt: string };
   href?: string;
 };
@@ -18,11 +18,13 @@ export type Project = {
 export const featuredProjects: readonly Project[] = [
   {
     slug: "north-and-co",
+    websiteUrl: "https://co-barbers-site.vercel.app/",
     name: "North & Co Barbers",
     category: "Website & booking experience",
     description: "A barbershop website exploring responsive design and a booking-style experience, built with Next.js and Supabase.",
     technologies: ["Next.js", "Responsive UI", "Supabase"],
     cover: "north",
+    image: { src: "/barber.png", alt: "North & Co Barbers website homepage" },
     overview: "A modern, responsive barbershop website built around performance, usability and a streamlined booking experience.",
     story: [
       "North & Co is a full-stack website concept I designed and developed for a modern independent barbershop. It explores how a strong visual identity can work alongside practical functionality to help turn visitors into customers.",
@@ -47,11 +49,13 @@ export const featuredProjects: readonly Project[] = [
   },
   {
     slug: "uwe-breas",
+    websiteUrl: "https://uwebreas.com/",
     name: "UWE BREAS",
     category: "Real-world web project",
     description: "A web project in a real organisation context, connecting technical implementation with the needs of the people using it.",
     technologies: ["Web development", "Organisation collaboration"],
     cover: "breas",
+    image: { src: "/uwe_breas.png", alt: "UWE Bristol Real Estate Alumni Society website homepage" },
     overview: "A real-world website project supporting a University of the West of England research initiative.",
     story: [
       "I worked on the BREAS website during a web development internship with the University of the West of England (UWE Bristol). The project involved developing a web presence for an active university initiative, with real organisational requirements and an audience to support.",
