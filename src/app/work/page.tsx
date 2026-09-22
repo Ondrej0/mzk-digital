@@ -167,16 +167,16 @@ export default function WorkPage() {
                                 </h2>
 
                                 <p className="work-page-project-description">
-                                    {project.description}
+                                    {project.overview}
                                 </p>
 
                                 <div className="work-page-project-details">
-                                    <p className="eyebrow">BUILT WITH / FOCUS</p>
+                                    <p className="eyebrow">TECHNOLOGY / TOOLS</p>
 
                                     <ul
                                         aria-label={`${project.name} technologies and focus`}
                                     >
-                                        {project.technologies.map((technology) => (
+                                        {project.stack.map((technology) => (
                                             <li key={technology}>
                                                 <span aria-hidden="true">+</span>
                                                 {technology}
@@ -201,6 +201,22 @@ export default function WorkPage() {
                     </span>
                                     )}
                                 </div>
+                            </div>
+                        </div>
+                        <div className="container work-page-project-story-grid">
+                            <div className="work-page-project-story">
+                                <h3 className="eyebrow">ABOUT THE PROJECT</h3>
+                                {project.story.map((paragraph) => (
+                                    <p key={paragraph}>{paragraph}</p>
+                                ))}
+                            </div>
+                            <div className="work-page-project-highlights">
+                                <h3 className="eyebrow">{project.highlightsTitle}</h3>
+                                <ul>
+                                    {project.highlights.map((highlight) => (
+                                        <li key={highlight}>{highlight}</li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     </article>

@@ -1451,6 +1451,56 @@ h2, .section-heading > div > p, .about-grid > div:first-child > p#about-heading 
   line-height: 1.85;
 }
 
+.work-page-project-story-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr);
+  gap: clamp(40px, 8vw, 120px);
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid #c7cbbd;
+}
+
+.work-page-project-story-grid h3 {
+  margin: 0 0 20px;
+  color: #636758;
+}
+
+.work-page-project-story p {
+  max-width: 65ch;
+  margin: 0;
+  color: #4e5246;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.work-page-project-story p + p {
+  margin-top: 18px;
+}
+
+.work-page-project-highlights ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #4e5246;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.work-page-project-highlights li {
+  padding: 0 0 12px 6px;
+}
+
+.work-page-project-highlights li::marker {
+  color: #66763c;
+}
+
+@media (max-width: 767px) {
+  .work-page-project-story-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 32px;
+  }
+}
+
 
 /* =========================================
    PROJECT TECHNOLOGIES / FOCUS
